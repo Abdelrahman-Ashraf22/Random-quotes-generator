@@ -1,0 +1,121 @@
+#root,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Abril Fatface", serif;
+  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Zilla Slab", serif;
+}
+
+.app {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./img.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.quote {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 500px;
+
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 10px;
+}
+.advice {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  font-family: "Zilla Slab", sans-serif;
+}
+
+.btn {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 200px;
+  width: 210px;
+  opacity: 1;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.btn:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+}
+.btn span {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.btn:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .quote {
+    width: 1000px;
+    height: 200px;
+  }
+}
