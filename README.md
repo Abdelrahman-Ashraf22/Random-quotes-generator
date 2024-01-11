@@ -1,3 +1,3 @@
 # Random-quotes-generator
-**a new project generate random quotes when click on the button <br/>
-**using an API "https://api.adviceslip.com/advice"
+*A new project generates random quotes when clicking on the button <br/>
+*Using an API "https://api.adviceslip.com/advice"
